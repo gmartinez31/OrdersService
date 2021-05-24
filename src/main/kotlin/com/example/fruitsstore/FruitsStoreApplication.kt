@@ -11,7 +11,9 @@ fun main(args: Array<String>) {
 
 	val ordersService = OrdersService()
 	val scanner = Scanner(System.`in`)
-	println("Welcome, customer. What fruits would you like to order? Currently, we only accept orders for Apples and Oranges.")
+	println("Welcome, customer. What fruits would you like to order? /n" +
+			"Currently, we only accept orders for Apples and Oranges. /n" +
+			"Please specify your order and separate each item by comma. /n")
 
 	val order = scanner.nextLine()
 	val total = ordersService.calculateTotal(order)
