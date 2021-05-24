@@ -56,9 +56,9 @@ internal class OrdersServiceTest {
 
     @Test
     fun `calculateTotal() should return total price for valid order`() {
-        val order = "ApPle, Orange, orange, APPlE"
+        val order = "ApPle, Orange, orange, orange, APPlE"
         val total: Double = ordersService.calculateTotal(order)
         val formattedTotal = String.format("%.2f", total)
-        assertEquals("1.70", formattedTotal)
+        assertEquals("1.10", formattedTotal)
     }
 }
